@@ -1,6 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
-
 import Home from "./views/Home";
 import Pokemones from "./views/Pokemones";
 import Detalle from "./views/Detalle";
