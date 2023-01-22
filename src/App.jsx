@@ -11,9 +11,11 @@ import './App.css';
 
 function App() {
   const [listaPoke, setListaPoke] = useState([]);
+ 
+ 
   return (
     <div className="App">
-    <Context.Provider value={{ listaPoke, setListaPoke }}>
+    <Context.Provider value={{listaPoke, setListaPoke }}>
       <BrowserRouter>
         <Navbar />
 
@@ -21,7 +23,8 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/pokemones" element={<Pokemones />} />
           <Route path="/pokemones/:nombre" element={<Detalle />} />
-        </Routes>       
+        </Routes>   
+
       </BrowserRouter>
       </Context.Provider>
      </div>
